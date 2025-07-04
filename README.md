@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ♟️ Chess Grandmasters Wiki
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15-blue?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38b2ac?logo=tailwindcss)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn/ui-styled%20components-8b5cf6?logo=radix-ui)](https://ui.shadcn.dev/)
+[![Deployed on Vercel](https://img.shields.io/badge/Vercel-Live-black?logo=vercel)](https://chess-grandmasters-wiki-lyart.vercel.app/)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-First, run the development server:
+A sleek, searchable web app that displays all chess grandmasters from Chess.com's public API. Built with **Next.js 15**, **React 19**, and **TanStack Table**, it offers real-time search, persistent state, pagination, and dynamic online timers for each grandmaster.
+
+---
+
+## 🌍 Live Demo
+
+🔗 **[View on Vercel →](https://chess-grandmasters-wiki-lyart.vercel.app/)**  
+📂 **[View the GitHub Repo →](https://github.com/EdgarIvanEspinoza/Chess-Grandmasters-Wiki)**
+
+---
+
+## ✨ Features
+
+- 🔍 Real-time search with state persistence
+- ⏱️ Live clock showing time since last online (HH:MM:SS)
+- 📄 Sortable, paginated table built with TanStack Table
+- 💾 Pagination & filters synced with localStorage
+- 🎯 Player profile pages with dynamic routing
+- 🎨 Beautiful UI with **shadcn/ui**, **Tailwind CSS**, and **Radix Primitives**
+
+---
+
+## 🛠️ Tech Stack
+
+| Category        | Technology                                                                |
+| --------------- | ------------------------------------------------------------------------- |
+| Framework       | [Next.js 15 (App Router + Turbopack)](https://nextjs.org)                 |
+| UI Components   | [shadcn/ui](https://ui.shadcn.dev/) + [lucide-react](https://lucide.dev/) |
+| Styling         | [Tailwind CSS](https://tailwindcss.com)                                   |
+| Data Fetching   | [React Query](https://tanstack.com/query/latest)                          |
+| Table Rendering | [TanStack Table v8](https://tanstack.com/table/v8)                        |
+| HTTP Client     | [Axios](https://axios-http.com/)                                          |
+| Language        | [TypeScript](https://www.typescriptlang.org/)                             |
+| Runtime         | [React 19](https://react.dev)                                             |
+
+---
+
+## 🚀 Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/EdgarIvanEspinoza/Chess-Grandmasters-Wiki.git
+cd Chess-Grandmasters-Wiki
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then visit [http://localhost:3000](http://localhost:3000) 🚀
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📈 Possible Improvements
 
-## Learn More
+- Add filtering by country, title, or activity
+- Infinite scroll alternative to pagination
+- Dark mode toggle
+- Player stats (rating, federation, title history)
+- Global error/loading state UI
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 What I Learned
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project helped me explore:
 
-## Deploy on Vercel
+- Using `@tanstack/react-table` for complex table state
+- Managing persistent state across filters and pagination
+- Creating responsive, modern UIs with **shadcn/ui** + Tailwind
+- Leveraging `React Query` for fast and reliable API fetching
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Author
+
+Crafted with ♟️ by [**Iván Espinoza**](https://www.linkedin.com/in/edgarivanespinoza)
+_Venezuelan Frontend Engineer & Audio Producer passionate about tech, design, and chess._
