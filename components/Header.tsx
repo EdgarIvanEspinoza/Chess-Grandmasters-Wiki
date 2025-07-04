@@ -24,16 +24,13 @@ export default function Header() {
           ♟️ GrandMasters - Wiki
         </Link>
         <nav className="flex justify-center sm:justify-end space-x-6 text-sm">
-          <Link href="/grandmasters" className="hover:text-[var(--border)]">
-            Explore
-          </Link>
           <a
             href="https://www.chess.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[var(--border)]"
           >
-            Chess.com
+            Go to <strong>Chess.com</strong>
           </a>
         </nav>
       </div>
